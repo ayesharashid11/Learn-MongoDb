@@ -36,3 +36,10 @@ compound indexing
 # Partial Filters
 
 ```db.teachers.createIndex({age:1}, partialFilterExpression:{age: {$gt: 22}})```
+
+# Array Indexing
+
+mongoDb create separate index entry for each value in each array.
+
+# Text Index
+one collection can have only single index
